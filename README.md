@@ -1,5 +1,5 @@
 # leetcode
-**leetcode**题解-不定时更新
+**leetcode**题解-不定时更新\n
 语言不定，大部分是**Java**
 
 Start：2020/10/9
