@@ -8,22 +8,15 @@ package algorithm.leetcode.easy;
  */
 public class TwoSum
 {
-
     public static void main(String[] args){
         //测试
         int[] testArr = {3,2,4};
         int target = 6;
-        //打印原始数组长度
-        System.out.println(testArr.length);
 
         Solution solution = new Solution();
         int[] sol = solution.twoSum(testArr,target);
 
-        for (int x=0;x<sol.length;x++)
-        {
-            System.out.println(sol[x]);
-        }
-        //System.out.println("nums["+sol[0]+"] + nums[" + sol[1] + "] = target(" + target +")");
+        System.out.println("["+sol[0]+","+sol[1]+"]");
     }
 }
 /*
