@@ -2,7 +2,7 @@
 import random
 import time
 
-from L005_Validator import randomArray
+from L004_Validator import randomArray
 
 
 def binarySearch(arr, num):

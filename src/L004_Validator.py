@@ -2,7 +2,7 @@
 import random
 import copy
 
-from L004_Sort import selectionSort, bubbleSort, bubbleSort_Reversed, insertionSort
+from L003_Sort import selectionSort, bubbleSort, bubbleSort_Reversed, insertionSort
 
 def randomArray(length, scale):
     """
