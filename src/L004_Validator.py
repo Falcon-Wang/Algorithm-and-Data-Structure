@@ -1,4 +1,4 @@
-# 算法005：对数器
+# 算法004：对数器
 import random
 import copy
 
