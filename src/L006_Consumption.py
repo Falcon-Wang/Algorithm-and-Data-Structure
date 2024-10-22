@@ -1,4 +1,4 @@
-# 算法007：时间、空间复杂度
+# 算法006：时间、空间复杂度
 import copy
 import random
 

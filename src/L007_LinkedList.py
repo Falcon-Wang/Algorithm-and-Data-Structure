@@ -1,4 +1,4 @@
-# 算法005：单双链表及其反转
+# 算法007：单双链表及其反转
 class SinglyNode:
     """单链表结点定义"""
     def __init__(self, value=None):
@@ -34,13 +34,40 @@ class SinglyLinkedList:
         """
         next = None
         pre = None
-        while not self.head is None:
+        while self.head is not None:
             next = self.head.next
             self.head.next = pre
             pre = self.head
             self.head = next
         self.head = pre
         return self.head
+    
+    def merge_linked_list(list1: SinglyNode, list2: SinglyNode):
+        """合并两个有序单链表, 使合并后的单链表整体有序"""
+        # 检查链表是否为空
+        if list1 is None or list2 is None:
+            return list2 if list1 is None else list1
+        
+        # 确定头结点更小的子链表
+        head: SinglyNode = list2 if list1.value > list2.value else list1
+
+        curr1: SinglyNode = head.next
+        curr2: SinglyNode = list1 if head is list2 else list1
+        pre = head
+
+        while curr1 is not None and curr2 is not None:
+            if curr1.value <= curr2.value:
+                pre.next = curr1
+                curr1 = curr1.next
+            else:
+                pre.next = curr2
+                curr2 = curr2.next
+            pre = pre.next
+        pre.next = curr1 if curr1 is not None else curr2
+
+        return head
+
+        
 
 
 
@@ -71,28 +98,41 @@ class DoublyLinkedList:
         """双链表遍历"""
         current = self.head
         while current:
-            print(current.value)
+            print(f"{current.value} -->")
             current = current.next
         print("None")
 
     def invert(self):
-        """双链表反转"""
-        pass
+        next = None
+        prev = None
+        while self.head is not None:
+            next = self.head.next
+            self.head.next = prev
+            self.head.prev = next
+            prev = self.head
+            self.head = next
+        self.head = prev
 
 
 def main():
-    Singly_LinkedList = SinglyLinkedList()  # 初始化单链表
-    Singly_LinkedList.append(1)     # 添加结点
-    Singly_LinkedList.append(2)     # 添加结点
-    Singly_LinkedList.append(3)     # 添加结点
-    new_head = Singly_LinkedList.invert()
-    Singly_LinkedList.traverse(new_head)    # 遍历单链表
 
-    """
-    Doubly_LinkedList = DoublyLinkedList()  # 初始化双链表
-    Doubly_LinkedList.append(6) # 添加结点
-    Doubly_LinkedList.append(7)
-    Doubly_LinkedList.inverted_traverse()   # 倒序遍历双链表
-    """
+    linked_list_1 = SinglyLinkedList()
+    linked_list_1.append(1)
+    linked_list_1.append(3)
+    linked_list_1.append(5)
+    
+    linked_list_2 = SinglyLinkedList()
+    linked_list_2.append(2)
+    linked_list_2.append(4)
+    linked_list_2.append(6)
+    
+    # 合并两个有序链表，并输出结果
+    merged_head = SinglyLinkedList.merge_linked_list(linked_list_1.head, linked_list_2.head)
+    
+    # 打印合并后的链表
+    merged_list = SinglyLinkedList()
+    merged_list.head = merged_head
+    merged_list.traverse()
+    
 if __name__ == "__main__":
     main()

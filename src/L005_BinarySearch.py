@@ -1,4 +1,4 @@
-# 算法006：二分搜索
+# 算法005：二分搜索
 import random
 import time
 
