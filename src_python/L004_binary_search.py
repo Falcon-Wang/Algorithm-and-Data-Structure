@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src_python/L004_binary_search.py
 # 算法004：二分搜索
+=======
+# 算法005：二分搜索
+>>>>>>> 6eadbc22c2dec32a1cc364b82eb31b3389b8ca56:src/L005_BinarySearch.py
 import random
 import time
 

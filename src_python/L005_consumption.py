@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src_python/L005_consumption.py
 # 算法005：时间、空间复杂度
+=======
+# 算法006：时间、空间复杂度
+>>>>>>> 6eadbc22c2dec32a1cc364b82eb31b3389b8ca56:src/L006_Consumption.py
 import copy
 import random
 

@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src_python/L002_sort.py
 # 算法002：选择、冒泡、插入排序
+=======
+# 算法003：选择、冒泡、插入排序
+>>>>>>> 6eadbc22c2dec32a1cc364b82eb31b3389b8ca56:src/L003_Sort.py
 
 def selectionSort(arr):
     """

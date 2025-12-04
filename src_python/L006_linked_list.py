@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src_python/L006_linked_list.py
 # 算法006：单双链表及其反转
+=======
+# 算法007：单双链表及其反转
+>>>>>>> 6eadbc22c2dec32a1cc364b82eb31b3389b8ca56:src/L007_LinkedList.py
 class SinglyNode:
     """单链表结点定义"""
     def __init__(self, value=None):

@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src_python/L001_binary.py
 # 算法001：二进制
+=======
+# 算法002：二进制
+>>>>>>> 6eadbc22c2dec32a1cc364b82eb31b3389b8ca56:src/L002_Binary.py
 '''
 以32位形式
 实现打印二进制的函数printBinary

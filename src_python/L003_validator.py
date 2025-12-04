@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src_python/L003_validator.py
 # 算法003：对数器
+=======
+# 算法004：对数器
+>>>>>>> 6eadbc22c2dec32a1cc364b82eb31b3389b8ca56:src/L004_Validator.py
 import random
 import copy
 
