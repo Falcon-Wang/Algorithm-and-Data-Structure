@@ -1,8 +1,8 @@
-# 算法006：时间、空间复杂度
+# 算法005：时间、空间复杂度
 import copy
 import random
 
-from L004_Validator import randomArray, bubbleSort
+from src_python.L003_validator import randomArray, bubbleSort
 
 
 def bubble_sort_single_loop(arr):

@@ -1,8 +1,8 @@
-# 算法004：对数器
+# 算法003：对数器
 import random
 import copy
 
-from L003_Sort import selectionSort, bubbleSort, bubbleSort_Reversed, insertionSort
+from src_python.L002_sort import selectionSort, bubbleSort, bubbleSort_Reversed, insertionSort
 
 def randomArray(length, scale):
     """

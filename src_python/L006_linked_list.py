@@ -1,4 +1,4 @@
-# 算法007：单双链表及其反转
+# 算法006：单双链表及其反转
 class SinglyNode:
     """单链表结点定义"""
     def __init__(self, value=None):

@@ -1,8 +1,8 @@
-# 算法005：二分搜索
+# 算法004：二分搜索
 import random
 import time
 
-from L004_Validator import randomArray
+from src_python.L003_validator import randomArray
 
 
 def binarySearch(arr, num):
